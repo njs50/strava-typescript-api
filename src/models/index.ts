@@ -26,3 +26,5 @@ export * from './summary-segment-effort';
 export * from './timed-zone-range';
 export * from './zone-range';
 export * from './zones';
+export * from './photo';
+

@@ -8,6 +8,7 @@ import {
   DetailedAthlete,
   DetailedGear,
   Lap,
+  Photo,
   StreamSet,
   SummaryActivity,
   SummaryAthlete,
@@ -124,6 +125,17 @@ export class Strava {
 
     return this.doRequest<ActivityZone[]>(path);
   }
+
+  /**
+   * Undocumented Feature. Gets media attached to an activity
+   * @param id The identifier of the activity.
+   */
+  async getPhotosByActivityId(id: number) {
+    const path = `activities/${id}/photos`;
+
+    return this.doRequest<Photo[]>(path);
+  }
+
 
   /**
    * Returns the currently authenticated athlete
