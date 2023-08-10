@@ -27,4 +27,16 @@ export interface DetailedAthlete {
   clubs: SummaryClub;
   bikes: SummaryGear;
   shoes: SummaryGear;
+
+  username: string;
+  bio: string;
+  summit: boolean;
+  badge_type_id: number;
+  blocked: boolean;
+  can_follow: boolean;
+  athlete_type: number;
+  date_preference: string;
+
+  is_winback_via_upload: boolean;
+  is_winback_via_view: boolean;
 }
